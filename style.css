@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background: #222;
+  color: #fff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.intro {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.intro > * {
+  text-align: center;
+}
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-family: "Libre Baskerville", serif;
+}
+
+h2 span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  color: #222;
+  padding: 5px 12px;
+  background-color: goldenrod;
+  border-radius: 4px;
+  vertical-align: 5px;
+}
+
+.price span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 12px;
+  text-decoration: line-through;
+}
+.description {
+  padding: 30px 15px;
+}
+.pricing-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.option {
+  background-image: linear-gradient(rgba(43, 43, 43, 0.5), rgba(0, 0, 0, 0.5));
+  margin: 25px;
+  padding: 25px 10px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 10px 4px rgb(236, 0, 140, 0.8);
+}
+
+.option > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+
+.price {
+  font-size: 3rem;
+  position: relative;
+}
+.rate {
+  font-size: 0.8rem;
+}
+.pricing_ctas {
+  padding: 0 10px;
+  align-self: flex-end;
+}
+.cta {
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #f05a28, #ec008c, #f05a28);
+  padding: 10px;
+  color: #fff;
+}
+
+/* RESPONSIVE LAYOUT */
+@media (max-width: 900px) {
+  .intro  {
+    max-width: 400px;
+  }
+  .pricing-grid {
+    flex-flow: column;
+  }
+  .option {
+    max-width: 400px;
+    margin: 30px auto;
+  }
+}
+
+/* ANIMATIONS */
