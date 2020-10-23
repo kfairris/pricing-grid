@@ -1,4 +1,7 @@
+![pricing grid layout](pricing-grid-layout.jpg)
+
 # Pricing Grid with Equal Height Boxes Using Flexbox
+
 An example of a pricing grid with equal height cards and buttons that align at the bottom of the cards.
 
 Thanks to Wes Bos for the tutorials! 
