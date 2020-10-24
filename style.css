@@ -104,11 +104,14 @@ h2 span {
 
 /* RESPONSIVE LAYOUT */
 @media (max-width: 900px) {
+  body {
+    padding: 0 15px;
+  }
   .intro  {
     max-width: 400px;
   }
   .pricing-grid {
-    flex-flow: column;
+    flex-flow: column wrap;
   }
   .option {
     max-width: 400px;
